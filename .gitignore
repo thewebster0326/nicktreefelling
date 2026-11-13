@@ -1,0 +1,5 @@
+/Logo.jpeg
+/WhatsApp Image *.jpeg
+.DS_Store
+Thumbs.db
+node_modules/
