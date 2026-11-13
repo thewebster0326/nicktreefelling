@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/nicktreefelling/public_html/
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp index.html styles.css script.js robots.txt sitemap.xml $DEPLOYPATH
