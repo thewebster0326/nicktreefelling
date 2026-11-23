@@ -3,4 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/nicktreefelling/public_html/
     - /bin/cp -R assets blog services areas $DEPLOYPATH
-    - /bin/cp index.html 404.html styles.css blog.css landing.css script.js blog.js robots.txt sitemap.xml feed.xml .htaccess $DEPLOYPATH
+    - /bin/cp index.html 404.html styles.css blog.css landing.css script.js blog.js robots.txt sitemap.xml sitemap_index.xml sitemap-main.xml sitemap-services.xml sitemap-areas.xml sitemap-service-areas.xml feed.xml .htaccess $DEPLOYPATH
