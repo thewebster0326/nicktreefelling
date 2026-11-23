@@ -1,0 +1,53 @@
+.landing-hero h1 { max-width: 980px; }
+.landing-hero .hero-intro { max-width: 760px; }
+.landing-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; margin: 32px 0; }
+.landing-summary > div { padding: 23px; border: 1px solid var(--line); background: var(--paper); }
+.landing-summary strong { display: block; margin-bottom: 7px; font-family: var(--serif); font-size: 1.1rem; }
+.landing-summary p { margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.65; }
+.scope-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 24px; padding-left: 0 !important; list-style: none; }
+.scope-list li { position: relative; margin: 0; padding: 13px 13px 13px 38px; border: 1px solid var(--line); background: var(--paper); font-size: .84rem; }
+.scope-list li::before { position: absolute; top: 16px; left: 15px; color: #789245; content: "✓"; font-weight: 700; }
+.service-directory { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 30px 0; }
+.service-directory a { position: relative; display: flex; min-height: 170px; flex-direction: column; padding: 25px; border: 1px solid var(--line); color: var(--paper); background: var(--forest); transition: background .25s, transform .25s; }
+.service-directory a:hover { background: var(--forest-soft); transform: translateY(-3px); }
+.service-directory a > span { color: var(--lime); font-size: .64rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.service-directory a > strong { margin: 12px 0 8px; color: var(--paper); font-family: var(--serif); font-size: 1.35rem; font-weight: 600; line-height: 1.25; }
+.service-directory a > small { margin-top: auto; color: #b8c6bb; font-size: .73rem; }
+.area-directory { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 28px 0 35px; }
+.area-directory a { display: flex; min-height: 64px; align-items: center; padding: 13px 15px; border: 1px solid #ccd5c6; color: #2c4134; background: var(--paper); font-size: .76rem; font-weight: 600; line-height: 1.35; transition: color .2s, background .2s; }
+.area-directory a:hover { color: var(--paper); background: var(--forest); }
+.area-directory a::before { width: 5px; height: 5px; flex: 0 0 auto; margin-right: 10px; border-radius: 50%; background: #8da653; content: ""; }
+.local-links { display: flex; flex-wrap: wrap; gap: 9px; margin: 24px 0 32px; }
+.local-links a { padding: 8px 12px; border: 1px solid #ccd5c6; color: #425a35; background: var(--paper); font-size: .73rem; font-weight: 600; }
+.local-links a:hover { color: var(--paper); background: var(--forest); }
+.local-note { padding: 20px 22px; border-left: 3px solid #8ca450; background: #edf2e2; font-size: .87rem; }
+.landing-breadcrumbs { margin-bottom: 25px; }
+.landing-index-intro { max-width: 740px; margin-bottom: 35px; color: var(--muted); }
+.landing-index-section { padding: 75px 0 100px; }
+.landing-index-section h2 { margin-top: 50px; }
+.landing-index-section h2:first-child { margin-top: 0; }
+.landing-page .article-content h2 { scroll-margin-top: 110px; }
+.landing-page .article-content > p:first-of-type { max-width: 760px; }
+.landing-page .article-content { max-width: 820px; }
+.landing-page .article-layout { grid-template-columns: minmax(0, 1fr) 290px; }
+.landing-page .sidebar-cta .button { text-transform: none; }
+.landing-page .article-end-cta .button { text-transform: none; }
+
+@media (max-width: 1100px) {
+  .area-directory { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .service-directory { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 860px) {
+  .landing-page .article-layout { grid-template-columns: 1fr; }
+  .landing-summary { grid-template-columns: 1fr; }
+  .landing-summary > div { padding: 19px; }
+  .landing-page .article-sidebar-inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .scope-list, .service-directory { grid-template-columns: 1fr; }
+  .area-directory { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+  .area-directory a { min-height: 58px; padding: 11px; font-size: .69rem; }
+  .service-directory a { min-height: 145px; }
+  .landing-page .article-sidebar-inner { grid-template-columns: 1fr; }
+  .landing-index-section { padding: 55px 0 70px; }
+}

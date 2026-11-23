@@ -157,7 +157,9 @@ svg { width: 1.25em; height: 1.25em; fill: none; stroke: currentColor; stroke-wi
 .service-icon svg { width: 31px; height: 31px; stroke-width: 1.4; }
 .service-card h3 { margin-bottom: 12px; font-family: var(--serif); font-size: 1.6rem; font-weight: 600; }
 .service-card p { margin-bottom: 25px; color: #b9c5bb; font-size: .88rem; line-height: 1.75; }
+.service-card-links { display: flex; flex-wrap: wrap; gap: 12px 20px; }
 .service-card a { display: inline-flex; align-items: center; gap: 10px; color: var(--lime); font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.service-card .service-details { color: #b9c5bb; }
 .service-card a svg { width: 16px; height: 16px; transition: transform .2s; }
 .service-card a:hover svg { transform: translate(3px, -3px); }
 
@@ -196,10 +198,10 @@ svg { width: 1.25em; height: 1.25em; fill: none; stroke: currentColor; stroke-wi
 .area-note > svg { width: 32px; height: 32px; color: #6c853d; }
 .area-note a { color: var(--ink); font-weight: 700; text-decoration: underline; text-decoration-color: #a9b991; text-underline-offset: 4px; }
 .area-list { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #cdd4c9; border-left: 1px solid #cdd4c9; }
-.area-list span { position: relative; display: flex; min-height: 80px; align-items: center; padding: 18px 18px 18px 38px; border-right: 1px solid #cdd4c9; border-bottom: 1px solid #cdd4c9; font-size: .84rem; font-weight: 600; transition: color .25s, background .25s; }
-.area-list span::before { position: absolute; left: 18px; width: 6px; height: 6px; border-radius: 50%; background: #8ca251; content: ""; }
-.area-list span:hover { color: var(--paper); background: var(--forest); }
-.area-list span:hover::before { background: var(--lime); }
+.area-list a { position: relative; display: flex; min-height: 80px; align-items: center; padding: 18px 18px 18px 38px; border-right: 1px solid #cdd4c9; border-bottom: 1px solid #cdd4c9; font-size: .84rem; font-weight: 600; transition: color .25s, background .25s; }
+.area-list a::before { position: absolute; left: 18px; width: 6px; height: 6px; border-radius: 50%; background: #8ca251; content: ""; }
+.area-list a:hover { color: var(--paper); background: var(--forest); }
+.area-list a:hover::before { background: var(--lime); }
 
 .quote-section { position: relative; overflow: hidden; padding: 120px 0; color: var(--paper); background: var(--forest-deep); }
 .quote-section::before { position: absolute; inset: 0; background: linear-gradient(90deg, var(--forest-deep) 10%, rgba(12, 30, 23, .88)), url('assets/hero-tree-trimming.webp') center / cover; content: ""; opacity: .4; }
@@ -408,8 +410,8 @@ svg { width: 1.25em; height: 1.25em; fill: none; stroke: currentColor; stroke-wi
   .cta-inner .button { width: 100%; margin: 25px 0 0; }
   .areas-grid { gap: 40px; }
   .area-list { grid-template-columns: repeat(2, 1fr); }
-  .area-list span { min-height: 65px; padding: 14px 10px 14px 28px; font-size: .74rem; }
-  .area-list span::before { left: 13px; width: 5px; height: 5px; }
+  .area-list a { min-height: 65px; padding: 14px 10px 14px 28px; font-size: .74rem; }
+  .area-list a::before { left: 13px; width: 5px; height: 5px; }
   .quote-section { padding: 75px 0; }
   .quote-grid { gap: 45px; }
   .contact-cards { grid-template-columns: 1fr; gap: 0; margin-top: 25px; }
